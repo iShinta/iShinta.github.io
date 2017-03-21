@@ -43,3 +43,7 @@ table{
 #footer{
   text-align: center;
 }
+
+.member{
+  display: inline-block;
+}
