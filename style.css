@@ -5,6 +5,11 @@ body{
   margin: 0px;
   padding: 0px;
   font-family: Verdana, georgia, "times new roman", times, serif;
+  color: white;
+}
+
+a{
+  color: white;
 }
 
 h1{
@@ -27,7 +32,6 @@ table{
   text-align: center;
   border: solid 1px;
   font-weight: bold;
-  color: white;
 }
 
 #menu ul li{
