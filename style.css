@@ -27,14 +27,15 @@ a {
 }
 a:hover {
 	color: #F05F40;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	/*letter-spacing: 0.5px;*/
 }
 a:focus {
 	color: #F05F40;
 }
 a:active {
-	color: #EB3812;
+	color: #444;
+	text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,4 +49,23 @@ p {
 	line-height: 2;
 	margin-bottom: 20px;
 	color: #222;
+}
+
+.navlist {
+	list-style: none;
+	width: 100%;
+	text-align: center;
+	margin: 0 center;
+	padding: 0;
+	font-size: 20px;
+}
+.navlist li {
+	display: inline;
+	letter-spacing: 1px;
+	padding: 5px;
+}
+
+.current {
+	color: #f05f40;
+	font-size: 25px;
 }
