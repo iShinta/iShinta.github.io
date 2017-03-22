@@ -27,7 +27,7 @@ a {
 }
 a:hover {
 	color: #F05F40;
-	/*text-decoration: underline;*/
+	text-decoration: underline;
 	/*letter-spacing: 0.5px;*/
 }
 a:focus {
