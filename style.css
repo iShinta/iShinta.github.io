@@ -100,10 +100,25 @@ p {
   max-width:1000px;
 }
 
+.container.container-centered {
+	padding-top: 10%;
+}
+
 .navbar {
 	margin: 0;
 	padding: 0;
 	z-index: 2;
+}
+
+.footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0);
+}
+
+footer div.container {
+	margin-left: 50px;
 }
 
 /*.splash-navbar {
@@ -175,11 +190,9 @@ p {
 
 /* Supporting */
 .splash-supporting {
-  margin-top: 40px;
-  text-shadow: 0 2px 3px rgba(0,0,0,.2);
   text-align: center;
   color: black;
-  height: 600px;
+  height: 80vh;
   column-gap: 300px;
 }
 
