@@ -118,7 +118,11 @@ p {
 }
 
 footer div.container {
-	margin-left: 50px;
+	margin-left: 10px;
+}
+
+footer div.container p {
+	font-size: 12px;
 }
 
 /*.splash-navbar {
