@@ -58,6 +58,7 @@ p {
 	margin: 0 center;
 	padding: 0;
 	font-size: 20px;
+	z-index: 2;
 }
 .navlist li {
 	display: inline;
@@ -85,9 +86,9 @@ p {
 }
 
 .splash-header .splash-header-darken {
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.5);
 	z-index: 1;
-	position: absolute;
+	position: relative;
 	margin: 0 auto;
 	height: inherit;
 	width: 100%;
@@ -95,15 +96,21 @@ p {
 	left: 0;
 }
 
-.splash-navbar {
-  /*padding: 10px 0;*/
+.splash-container {
+  max-width:1000px;
+}
+
+.navbar {
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+}
+
+/*.splash-navbar {
+  padding: 10px 0;
   background-color: black;
   z-index: 2;
   position: relative;
-}
-
-.splash-container {
-  max-width:1000px;
 }
 .splash-nav {
   display: inline-block;
@@ -114,16 +121,16 @@ p {
 }
 
 .splash-nav li {
-  /*display: inline-block;
+  display: inline-block;
   float:right; 
   color: White;
   font-size: 25px;
-  margin-left: 30px;*/
+  margin-left: 30px;
   display: inline;
   letter-spacing: 1px;
   padding: 5px;
   color: white;
-}
+}*/
 
 /* title */
 /*.splash-title {
@@ -145,19 +152,20 @@ p {
 }*/
 
 .splash-title {
-	position: relative;
+	position: absolute;
  	text-align: center;
- 	padding: 100px 15px 100px;
  	width: 100%;
- 	z-index: 2;
+ 	z-index: 1;
+ 	top: 0;
+ 	height: inherit;
 }
 
 .splash-title .splash-title-inner h1{
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 50vh auto;
 	color: white;
+
 }
 
 .container {
