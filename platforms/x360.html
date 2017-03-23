@@ -6,43 +6,62 @@
   <title>CS329E IBD - XBox 360</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
 
 <body>
   <div id="header">
     <p><a href="/index.html"><img src="/img/banner.png" /></a></p>
   </div>
-  <div id="menu">
+  <hr>
+  <div class="navlist">
     <ul>
       <li><a href="/games.html">Games</a></li>
-      <li><a href="/platforms.html">Platforms</a></li>
+      <li><a href="/platforms.html" class="current" style="text-decoration: none;">Platforms</a></li>
       <li><a href="/publishers.html">Publishers</a></li>
       <li><a href="/about.html">About Us</a></li>
     </ul>
   </div>
+  <hr>
   <div id="body">
     <h1>XBox 360</h1>
-      <h2>Introduction</h2>
-        <p>The XBox 360 was manufactured by Microsoft and competed with the Wii and the PS3. It could use the Kinect motion sensing camera.</p>
-      <h2>General</h2>
-        <ul>
-          <li> Manufacturer: Microsoft</li>
-          <li> Generation: Seventh </li>
-          <li> Retail Availability:
-                                <p style="margin-left:20px;">Japan: Dec 2005<br />
-                                North America: Nov 2005<br />
-                                Europe: Dec 2005</p></li>
-          <li> Units Sold: 84 million </li>
-          <li> Best-Selling Games:
-                               <p style="margin-left:20px;"><a href="/games/kinect-adventures.html">Kinect Adventures</a>: 18 million</li>
-        </ul>
-        <div style="display: inline-block;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Xbox-360-Pro-wController.jpg/401px-Xbox-360-Pro-wController.jpg" alt="Image 1" style="max-height: 400px; max-width: 400px; margin: 10px; padding: 10px; border: solid 1px;" />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Introduction</h2>
+          <p>The XBox 360 was manufactured by Microsoft and competed with the Wii and the PS3. It could use the Kinect motion sensing camera.</p>
         </div>
+      </div>
+      <div class="row">
+        <hr>
+        <h2>General</h2>
+        <div class="col-lg-6" style="text-align: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Xbox-360-Pro-wController.jpg/401px-Xbox-360-Pro-wController.jpg" alt="Image 1" style="max-height: 400px; max-width: 600px;">
+        </div>
+        <div class="col-lg-6">
+          <dl class="dl-horizontal">
+            <dt>Manufacturer</dt>
+            <dd>Microsoft</dd>
+            <dt>Generation</dt>
+            <dd>Seventh</dd>
+            <dt>Retail availability</dt>
+            <dd>Japan: Dec 2005</dd>
+            <dd>North America: Nov 2005</dd>
+            <dd>Europe: Dec 2005</dd>
+            <dt>Units sold</dt>
+            <dd>84 million</dd>
+            <dt>Best-selling games</dt>
+            <dd><a href="/games/kinect-adventures.html">Kinect Adventures</a>: 24 million</dd>
+            <dd><a href="/games/grand-theft-auto-v.html">Grand Theft Auto V</a>: 17.8 million</p></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="footer">
-    <p>CS329E : Project 3 - Group X</p>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>CS329E : Project 3 - Group X</p>
+    </div>
+  </footer>
 </body>
 </html>
