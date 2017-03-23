@@ -4,42 +4,79 @@
 <head>
   <meta charset="utf-8" />
   <title>CS329E IBD - Wii Sports</title>
-  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
 
 <body>
   <div id="header">
     <p><a href="/index.html"><img src="/img/banner.png" /></a></p>
   </div>
-  <div id="menu">
+  <hr>
+  <div class="navlist">
     <ul>
-      <li><a href="/games.html">Games</a></li>
+      <li><a href="/games.html" class="current" style="text-decoration: none;">Games</a></li>
       <li><a href="/platforms.html">Platforms</a></li>
       <li><a href="/publishers.html">Publishers</a></li>
       <li><a href="/about.html">About Us</a></li>
     </ul>
   </div>
+  <hr>
   <div id="body">
     <h1>Super Mario Bros.</h1>
-    <h2>General Information</h2>
-    <ul>
-      <li> Title: Super Mario Bros. </li>
-      <li> Platform: NES </li>
-      <li> Year of release: 1985 </li>
-      <li> Genre: Platformer </li>
-      <li> Publisher: Nintendo </li>
-    </ul>
-    <h2>Pictures</h2>
-      <div style="display: inline-block;">
-        <img src="http://vignette2.wikia.nocookie.net/logopedia/images/c/cf/Super-mario-bros-logo.jpg/revision/latest?cb=20160216211236" alt="Image 1" style="max-height: 400px; max-width: 400px; margin: 10px; padding: 10px; border: solid 1px;" />
-        <img src="http://www.goliath.com/wp-content/uploads/2015/10/super-mario-bros-pc-game-imagengrande1_yf87.jpg" alt="Image 2" style="max-height: 400px; max-width: 400px; margin: 10px; padding: 10px; border: solid 1px;" />
-        <img src="https://www.supermariobrosx.org/screen6.jpg" alt="Image 3" style="max-height: 400px; max-width: 400px; margin: 10px; padding: 10px; border: solid 1px;" />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>General Information</h2>
+          <dl class="dl-horizontal">
+            <dt>Title</dt>
+            <dd>Super Mario Bros.</dd>
+            <dt>Platform</dt>
+            <dd>NES</dd>
+            <dt>Year of release</dt>
+            <dd>1985</dd>
+            <dt>Genre</dt>
+            <dd>Platformer</dd>
+            <dt>Publisher</dt>
+            <dd>Nintendo</dd>
+            <dt>Review score</dt>
+            <dd>8.3/10</dd>
+          </dl>
+        </div>
       </div>
-    <h2>Videos</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ia8bhFoqkVE" frameborder="0" allowfullscreen></iframe>
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2>Pictures</h2>
+          <div class="picture-container">
+            <div class="img-circle circle-container wide">
+              <img src="http://vignette2.wikia.nocookie.net/logopedia/images/c/cf/Super-mario-bros-logo.jpg/revision/latest?cb=20160216211236" alt="Image 1">
+            </div>
+            <div class="img-circle circle-container wide">
+              <img src="http://www.goliath.com/wp-content/uploads/2015/10/super-mario-bros-pc-game-imagengrande1_yf87.jpg" alt="Image 2">
+            </div>
+            <div class="img-circle circle-container wide">
+               <img src="https://www.supermariobrosx.org/screen6.jpg" alt="Image 3">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2>Videos</h2>
+          <div class="picture-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ia8bhFoqkVE" frameborder="0" allowfullscreen class="video-centered"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="footer">
-    <p>CS329E : Project 3 - Group X</p>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>CS329E : Project 3 - Group X</p>
+    </div>
+  </footer>
 </body>
 </html>
