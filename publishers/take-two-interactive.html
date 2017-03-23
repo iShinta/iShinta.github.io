@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <title>CS329E IBD - Take Two Interactive</title>
-  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
 
 <body>
@@ -20,42 +22,77 @@
       <li><a href="/about.html">About Us</a></li>
     </ul>
   </div>
+  <hr>
   <div id="body">
     <h1>Take Two Interactive</h1>
-    <h2>General Information</h2>
-    <ul>
-      <li> Name: Take Two Interactive </li>
-      <li> Headquarters: New York City, New York, U.S.</li>
-      <li> Founded: 1993 </li>
-      <li> Revenue: US$1,413.698 million</li>
-      <li> Website: <a href="https://www.take2games.com/">take2games.com</a> </li>
-      <li> Subsidiaries: 2K Games, Rockstar Games</li>
-    </ul>
-    <h2>Headquarters</h2>
-      <div id="map" style="width:50%;height:400px;"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>General Information</h2>
+          <dl class="dl-horizontal">
+            <dt>Name</dt>
+            <dd>Take Two Interactive</dd>
+            <dt>Headquarters</dt>
+            <dd>New York City, New York, U.S.</dd>
+            <dt>Founded</dt>
+            <dd>1993</dd>
+            <dt>Revenue</dt>
+            <dd>US$1,413.698 million</dd>
+            <dt>Website</dt>
+            <dd><a href="https://www.take2games.com/">take2games.com</a></dd>
+            <dt>Subsidaries</dt>
+            <dd>2K Games</dd>
+            <dd>Rockstar Games</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2>Headquarters</h2>
+          <div class="picture-container">
+            <div id="map" style="width:50%;height:400px;margin:0 auto;"></div>
 
-      <script>
-      function myMap() {
-        
-        var myCenter = new google.maps.LatLng(40.712540, -74.007969);
-        var mapCanvas = document.getElementById("map");
-        var mapOptions = {center: myCenter, zoom: 5};
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({position:myCenter});
-        marker.setMap(map);
-      }
-      </script>
+            <script>
+            function myMap() {
+              
+              var myCenter = new google.maps.LatLng(40.712540, -74.007969);
+              var mapCanvas = document.getElementById("map");
+              var mapOptions = {center: myCenter, zoom: 5};
+              var map = new google.maps.Map(mapCanvas, mapOptions);
+              var marker = new google.maps.Marker({position:myCenter});
+              marker.setMap(map);
+            }
+            </script>
 
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5T_9gq72MxfsI32mUjQjzEFb5OhWmxis&callback=myMap"></script>
-
-    <h2>Twitter</h2>
-      <a class="twitter-timeline" data-width="600" data-height="1000" data-link-color="#f05f40" href="https://twitter.com/2K">Tweets by 2K</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-      <a class="twitter-timeline" data-width="600" data-height="1000" data-link-color="#f05f40" href="https://twitter.com/RockstarGames">Tweets by RockstarGames</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-      
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5T_9gq72MxfsI32mUjQjzEFb5OhWmxis&callback=myMap"></script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <hr>
+        <h2>Twitter</h2>
+        <div class="col-lg-6">
+          <div class="picture-container">
+            <div style="margin:0 auto; display:inline-block;">
+              <a class="twitter-timeline" data-width="600" data-height="1000" data-link-color="#f05f40" href="https://twitter.com/2K">Tweets by 2K</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="picture-container">
+            <div style="margin:0 auto; display:inline-block;">
+              <a class="twitter-timeline" data-width="600" data-height="1000" data-link-color="#f05f40" href="https://twitter.com/RockstarGames">Tweets by RockstarGames</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-  <div id="footer">
-    <p>CS329E : Project 3 - Group X</p>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>CS329E : Project 3 - Group X</p>
+    </div>
+  </footer>
 </body>
 </html>
