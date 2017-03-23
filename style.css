@@ -228,3 +228,13 @@ footer div.container p {
 	width: 120px;
 	text-align: center;
 }
+
+.img-circle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.title {
+  color: #f05f40;
+}
