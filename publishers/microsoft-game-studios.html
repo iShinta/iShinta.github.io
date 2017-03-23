@@ -4,14 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <title>CS329E IBD - Microsoft Game Studios</title>
-  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
 
 <body>
   <div id="header">
     <p><a href="/index.html"><img src="/img/banner.png" /></a></p>
   </div>
-  <hr>
+ <hr>
   <div class="navlist">
     <ul>
       <li><a href="/games.html">Games</a></li>
@@ -20,41 +22,65 @@
       <li><a href="/about.html">About Us</a></li>
     </ul>
   </div>
+  <hr>
   <div id="body">
-    <h1>Microsoft Game Studios</h1>
-    <h2>General Information</h2>
-    <ul>
-      <li> Name: Microsoft Game Studios </li>
-      <li> Headquarters: Redmond, Washington, U.S.</li>
-      <li> Founded: 2002 </li>
-      <li> Revenue: unreleased</li>
-      <li> Website: <a href="https://www.microsoftstudios.com/">microsoftstudios.com</a> </li>
-    </ul>
-    <h2>Headquarters</h2>
-      <div id="map" style="width:50%;height:400px;"></div>
+   <h1>Microsoft Game Studios</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>General Information</h2>
+          <dl class="dl-horizontal">
+            <dt>Name</dt>
+            <dd>Microsoft Game Studios</dd>
+            <dt>Headquarters</dt>
+            <dd>Redmond, Washington, U.S.</dd>
+            <dt>Founded</dt>
+            <dd>2002</dd>
+            <dt>Revenue</dt>
+            <dd>unreleased</dd>
+            <dt>Website</dt>
+            <dd><a href="https://www.microsoftstudios.com/">microsoftstudios.com</a></dd>
+          </dl>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2>Headquarters</h2>
+          <div class="picture-container">
+            <div id="map" style="width:50vw; height:400px; margin: 0 auto;"></div>
+            <script>
+              function myMap() {
+          
+              var myCenter = new google.maps.LatLng(47.678487, -122.118490);
+              var mapCanvas = document.getElementById("map");
+              var mapOptions = {center: myCenter, zoom: 5};
+              var map = new google.maps.Map(mapCanvas, mapOptions);
+              var marker = new google.maps.Marker({position:myCenter});
+              marker.setMap(map);
+            }
+            </script>
 
-      <script>
-      function myMap() {
-        
-        var myCenter = new google.maps.LatLng(47.678487, -122.118490);
-        var mapCanvas = document.getElementById("map");
-        var mapOptions = {center: myCenter, zoom: 5};
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({position:myCenter});
-        marker.setMap(map);
-      }
-      </script>
-
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5T_9gq72MxfsI32mUjQjzEFb5OhWmxis&callback=myMap"></script>
-
-      
-    <h2>Twitter</h2>
-      <a class="twitter-timeline" data-width="600" data-height="1000" data-link-color="#f05f40" href="https://twitter.com/MSStudiosBlog">Tweets by MSStudiosBlog</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-      
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5T_9gq72MxfsI32mUjQjzEFb5OhWmxis&callback=myMap"></script>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2>Twitter</h2>
+          <div class="picture-container">
+            <div style="margin:0 auto;">
+              <a class="twitter-timeline" data-width="600" data-height="1000" data-link-color="#f05f40" href="https://twitter.com/MSStudiosBlog">Tweets by MSStudiosBlog</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-  <div id="footer">
-    <p>CS329E : Project 3 - Group X</p>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>CS329E : Project 3 - Group X</p>
+    </div>
+  </footer>
 </body>
 </html>
