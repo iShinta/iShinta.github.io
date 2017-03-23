@@ -6,44 +6,62 @@
   <title>CS329E IBD - Wii</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
 
 <body>
   <div id="header">
     <p><a href="/index.html"><img src="/img/banner.png" /></a></p>
   </div>
-  <div id="menu">
+  <hr>
+  <div class="navlist">
     <ul>
       <li><a href="/games.html">Games</a></li>
-      <li><a href="/platforms.html">Platforms</a></li>
+      <li><a href="/platforms.html" class="current" style="text-decoration: none;">Platforms</a></li>
       <li><a href="/publishers.html">Publishers</a></li>
       <li><a href="/about.html">About Us</a></li>
     </ul>
   </div>
+  <hr>
   <div id="body">
     <h1>Wii</h1>
-      <h2>Introduction</h2>
-        <p>The Wii was a home video game console manufactured by <a href="/publishers/nintendo.html">Nintendo</a>. It was the first console to introduce remote controller that can be used as a pointing device for 3-D movement detection.</p>
-      <h2>General</h2>
-        <ul>
-          <li> Manufacturer: <a href="/publishers/nintendo.html">Nintendo</a></li>
-          <li> Generation: Seventh </li>
-          <li> Retail Availability:
-                                <p style="margin-left:20px;">Japan: Dec 2006<br />
-                                North America: Nov 2006<br />
-                                Europe: Dec 2006</p></li>
-          <li> Units Sold: 101.63 million </li>
-          <li> Best-Selling Games:
-                               <p style="margin-left:20px;"><a href="/games/wii-sports.html">Wii Sports</a>: 82.78 million<br />
-                               <a href="/games/mario-kart-wii.html">Mario Kart Wii</a>: 36.75 million</p></li>
-       </ul>
-       <div style="display: inline-block;">
-         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Wii-Console.png/600px-Wii-Console.png" alt="Image 1" style="max-height: 400px; max-width: 400px; margin: 10px; padding: 10px; border: solid 1px;" />
-       </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Introduction</h2>
+          <p>The Wii was a home video game console manufactured by <a href="/publishers/nintendo.html">Nintendo</a>. It was the first console to introduce remote controller that can be used as a pointing device for 3-D movement detection.</p>
+        </div>
+      </div>
+      <div class="row">
+        <hr>
+        <h2>General</h2>
+        <div class="col-lg-6" style="text-align: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Wii-Console.png/600px-Wii-Console.png" alt="Image 1" style="radius: 10%; height:400px;">
+        </div>
+        <div class="col-lg-6">
+          <dl class="dl-horizontal">
+            <dt>Manufacturer</dt>
+            <dd><a href="/publishers/nintendo.html">Nintendo</a></dd>
+            <dt>Generation</dt>
+            <dd>Seventh</dd>
+            <dt>Retail availability</dt>
+            <dd>Japan: Dec 2006</dd>
+            <dd>North America: Nov 2006</dd>
+            <dd>Europe: Dec 2006</dd>
+            <dt>Units sold</dt>
+            <dd>101.63 million</dd>
+            <dt>Best-selling games</dt>
+            <dd><a href="/games/wii-sports.html">Wii Sports</a>: 82.78 million</dd>
+            <dd><a href="/games/mario-kart-wii.html">Mario Kart Wii</a>: 36.75 million</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="footer">
-    <p>CS329E : Project 3 - Group X</p>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>CS329E : Project 3 - Group X</p>
+    </div>
+  </footer>
 </body>
 </html>
