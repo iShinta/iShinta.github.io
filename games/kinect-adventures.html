@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../style.css" />
+
+  <script src="../script.js"></script>
 </head>
 
 <body>
@@ -51,16 +53,26 @@
           <h2>Pictures</h2>
           <div class="picture-container">
             <div class="img-circle circle-container wide">
-              <img src="https://static.giantbomb.com/uploads/original/0/7580/1625026-kinect_adventures_game.jpeg" alt="Image 1">
+              <img src="https://static.giantbomb.com/uploads/original/0/7580/1625026-kinect_adventures_game.jpeg" alt="Image 1"  onClick="openModal(this)">
             </div>
             <div class="img-circle circle-container wide">
-              <img src="http://3.bp.blogspot.com/-1VwOV0hPUfo/Vq3ApkWGPCI/AAAAAAAAApw/-9ketUgwVlY/s1600/maxresdefault.jpg" alt="Image 2" >
+              <img src="http://3.bp.blogspot.com/-1VwOV0hPUfo/Vq3ApkWGPCI/AAAAAAAAApw/-9ketUgwVlY/s1600/maxresdefault.jpg" alt="Image 2" onClick="openModal(this)" >
             </div>
             <div class="img-circle circle-container wide">
-              <img src="http://media1.gameinformer.com/imagefeed/featured/microsoft/kinect/kinectadventures/kinectadventures113-610.jpg" alt="Image 3">
+              <img src="http://media1.gameinformer.com/imagefeed/featured/microsoft/kinect/kinectadventures/kinectadventures113-610.jpg" alt="Image 3"  onClick="openModal(this)">
             </div>
           </div>
         </div>
+
+        <!--Modal-->
+        <div id="myModal" class="modal">
+          <span class="modal-close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+          <div class="modal-container">
+            <img id="modal-img" src="">
+          </div>
+        </div>
+        <!--End Modal-->
+
       </div>
       <div class="row">
         <div class="col-lg-12">
