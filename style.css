@@ -258,6 +258,6 @@ footer div.container p {
 }
 
 .member {
-  display: block;
+  display: inline-block;
   height: 300px;
 }
