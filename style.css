@@ -118,6 +118,7 @@ footer div.container p {
 	top: 50%;
 	transform: translateY(-50%);
 	position: absolute;
+	left: 0;
 }
 
 .video-centered {
