@@ -6,44 +6,62 @@
   <title>CS329E IBD - Nes</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
 
 <body>
   <div id="header">
     <p><a href="/index.html"><img src="/img/banner.png" /></a></p>
   </div>
-  <div id="menu">
+  <hr>
+  <div class="navlist">
     <ul>
       <li><a href="/games.html">Games</a></li>
-      <li><a href="/platforms.html">Platforms</a></li>
+      <li><a href="/platforms.html" class="current" style="text-decoration: none;">Platforms</a></li>
       <li><a href="/publishers.html">Publishers</a></li>
       <li><a href="/about.html">About Us</a></li>
     </ul>
   </div>
+  <hr>
   <div id="body">
     <h1>Nes</h1>
-      <h2>Introduction</h2>
-        <p>The Nintendo Entertainment System was a home video game console manufactured by <a href="/publishers/nintendo.html">Nintendo</a>. Its release in the United States helped revitalize the video game industry following the video game crash of 1983.</p>
-      <h2>General</h2>
-        <ul>
-          <li> Manufacturer: <a href="/publishers/nintendo.html">Nintendo</a></li>
-          <li> Generation: Third </li>
-          <li> Retail Availability:
-                                <p style="margin-left:20px;">Japan: July 1983<br />
-                                North America: October 1985<br />
-                                Europe: September 1986</p></li>
-          <li> Units Sold: 61.91 million </li>
-          <li> Best-Selling Games:
-                               <p style="margin-left:20px;"><a href="/games/super-mario-bros.html">Super Mario Bros.</a>: 40.23 million<br />
-                               Super Mario Bros. 3: 18 million</p></li>
-        </ul>
-        <div style="display: inline-block;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/NES-Console-Set.png/800px-NES-Console-Set.png" alt="Image 1" style="max-height: 400px; max-width: 400px; margin: 10px; padding: 10px; border: solid 1px;" />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Introduction</h2>
+          <p>The Nintendo Entertainment System was a home video game console manufactured by <a href="/publishers/nintendo.html">Nintendo</a>. Its release in the United States helped revitalize the video game industry following the video game crash of 1983.</p>
         </div>
+      </div>
+      <div class="row">
+        <hr>
+        <h2>General</h2>
+        <div class="col-lg-6" style="text-align: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/NES-Console-Set.png/800px-NES-Console-Set.png" alt="Image 1" style="radius: 10%; width: 600px;">
+        </div>
+        <div class="col-lg-6">
+          <dl class="dl-horizontal">
+            <dt>Manufacturer</dt>
+            <dd><a href="/publishers/nintendo.html">Nintendo</a></dd>
+            <dt>Generation</dt>
+            <dd>Third</dd>
+            <dt>Retail availability</dt>
+            <dd>Japan: July 1983</dd>
+            <dd>North America: October 1985</dd>
+            <dd>Europe: September 1986</dd>
+            <dt>Units sold</dt>
+            <dd>61.91 million</dd>
+            <dt>Best-selling games</dt>
+            <dd><a href="/games/super-mario-bros.html">Super Mario Bros.</a>: 40.23 million</dd>
+            <dd>Super Mario Bros. 3: 18 million</p></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="footer">
-    <p>CS329E : Project 3 - Group X</p>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>CS329E : Project 3 - Group X</p>
+    </div>
+  </footer>
 </body>
 </html>
