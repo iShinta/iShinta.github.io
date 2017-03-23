@@ -3,10 +3,13 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>CS329E IBD - Wii Sports</title>
+  <title>CS329E IBD - Super Mario Bros.</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../style.css" />
+  
+  <!--External srcipt-->
+  <script src="../script.js"></script>
 </head>
 
 <body>
@@ -51,16 +54,26 @@
           <h2>Pictures</h2>
           <div class="picture-container">
             <div class="img-circle circle-container wide">
-              <img src="http://vignette2.wikia.nocookie.net/logopedia/images/c/cf/Super-mario-bros-logo.jpg/revision/latest?cb=20160216211236" alt="Image 1">
+              	<img src="http://vignette2.wikia.nocookie.net/logopedia/images/c/cf/Super-mario-bros-logo.jpg/revision/latest?cb=20160216211236" alt="Image 1" onclick="openModal(this)">
             </div>
             <div class="img-circle circle-container wide">
-              <img src="http://www.goliath.com/wp-content/uploads/2015/10/super-mario-bros-pc-game-imagengrande1_yf87.jpg" alt="Image 2">
+              <img src="http://www.goliath.com/wp-content/uploads/2015/10/super-mario-bros-pc-game-imagengrande1_yf87.jpg" alt="Image 2" onclick="openModal(this)">
             </div>
             <div class="img-circle circle-container wide">
-               <img src="https://www.supermariobrosx.org/screen6.jpg" alt="Image 3">
+              <img src="https://www.supermariobrosx.org/screen6.jpg" alt="Image 3" onclick="openModal(this)">
             </div>
           </div>
         </div>
+
+        <!--Modal-->
+        <div id="myModal" class="modal">
+          <span class="modal-close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+          <div class="modal-container">
+            <img id="modal-img" src="">
+          </div>
+        </div>
+        <!--End Modal-->
+
       </div>
       <div class="row">
         <div class="col-lg-12">
