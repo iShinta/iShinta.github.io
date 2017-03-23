@@ -238,3 +238,26 @@ footer div.container p {
 .title {
   color: #f05f40;
 }
+
+.about-h2{
+  text-align:left;
+  display: block;
+  margin-bottom: 35px;
+  margin-left: 50px;
+}
+
+.about_photo {
+  float: left;
+}
+
+.about-container {
+  margin-left: 50px;
+  float: left;
+  margin-right: 35px;
+  width: 300px;
+}
+
+.member {
+  display: block;
+  height: 300px;
+}
