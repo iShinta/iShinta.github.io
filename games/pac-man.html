@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>CS329E IBD - Pac-Man</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <!--External srcipt-->
+  <script src="../script.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <p><a href="/index.html"><img src="/img/banner.png" /></a></p>
+  </div>
+  <hr>
+  <div class="navlist">
+    <ul>
+      <li><a href="/games.html" class="current" style="text-decoration: none;">Games</a></li>
+      <li><a href="/platforms.html">Platforms</a></li>
+      <li><a href="/publishers.html">Publishers</a></li>
+      <li><a href="/about.html">About Us</a></li>
+    </ul>
+  </div>
+  <hr>
+  <div id="body">
+    <h1>Pac-Man</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>General Information</h2>
+          <dl class="dl-horizontal">
+            <dt>Title</dt>
+            <dd>Grand Theft Auto V</dd>
+            <dt>Platform</dt>
+            <dd>Playstation</dd>
+            <dd>Xbox</dd>
+            <dd>PC</dd>
+            <dt>Year of release</dt>
+            <dd>2013</dd>
+            <dt>Genre</dt>
+            <dd>Action-Adventure/Third-Person Shooter</dd>
+            <dt>Publisher</dt>
+            <dd>Rockstar Games</dd>
+            <dt>Review Score</dt>
+            <dd>9.7/10</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2>Pictures</h2>
+          <div class="picture-container">
+            <div class="img-circle circle-container wide">
+              <img src="https://b-i.forbesimg.com/alexmorrell/files/2013/09/GTA-V.jpg" alt="Image 1" onClick="openModal(this)">
+            </div>
+            <div class="img-circle circle-container wide">
+              <img src="https://upload.wikimedia.org/wikipedia/en/5/5c/Grand_Theft_Auto_V_combat.jpg" alt="Image 2" onClick="openModal(this)">
+            </div>
+            <div class="img-circle circle-container tall">
+              <img src="http://vignette4.wikia.nocookie.net/gtawiki/images/7/76/CoverArt-GTAV.png/revision/latest?cb=20130826184215" alt="Image 3" onClick="openModal(this)">
+            </div>
+          </div>
+        </div>
+
+        <!--Modal-->
+        <div id="myModal" class="modal">
+          <span class="modal-close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+          <div class="modal-container">
+            <img id="modal-img" src="">
+          </div>
+        </div>
+        <!--End Modal-->
+
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2>Videos</h2>
+          <div class="picture-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d74REG039Dk" frameborder="0" allowfullscreen class="video-centered"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>CS329E : Project 3 - Group X</p>
+    </div>
+  </footer>
+</body>
+</html>
