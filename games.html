@@ -178,7 +178,9 @@ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></scrip
   </footer>
   <script>
 $(document).ready(function(){
-    $('#gamesTable').dataTable();
+    $('#gamesTable').dataTable();( {
+    "lengthMenu": [ 3, 5, 10, "All"]
+	});
 });
 </script>
 </body>
