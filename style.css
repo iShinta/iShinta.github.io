@@ -315,3 +315,13 @@ footer div.container p {
 div.dataTables_wrapper div.dataTables_paginate ul.pagination{margin:2px 0;white-space:nowrap}
 div.dataTables_wrapper div.dataTables_paginate{margin:0;white-space:nowrap;text-align:right}
 div.dataTables_paginate{text-align:center}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    z-index: 3;
+    color: white;
+    background-color: #F05F40;
+    
+}
