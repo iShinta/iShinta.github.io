@@ -41,7 +41,7 @@ src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap4.min.js"></scrip
   <hr>
   <div id="body">
     <h1>Publishers</h1>
-    <table style="width: 100%; margin: 0 auto;" class="table">
+    <table style="width: 100%; margin: 0 auto;" class="gamesTable">
       <thead>
         <tr>
           <th> Title <i class="fa fa-fw fa-sort"></i></th>
@@ -140,15 +140,16 @@ src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap4.min.js"></scrip
     </table>
   </div>
   <footer class="footer">
-	$(document).ready(function(){
+
+    <div class="container">
+      <p>CS329E : Project 3 - Group X</p>
+    </div>
+    $(document).ready(function(){
     $('#gamesTable').dataTable( {
     "lengthMenu": [ 3, 5, 10],
     "pageLength": 5
 } );
 });
-    <div class="container">
-      <p>CS329E : Project 3 - Group X</p>
-    </div>
   </footer>
 </body>
 </html>
