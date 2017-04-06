@@ -40,8 +40,8 @@ src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap4.min.js"></scrip
   </div>
   <hr>
   <div id="body">
-    <h1>Games</h1>
-    <table class="table" name="gamesTable" id="gamesTable" style="width:100%">
+    <h1>Platforms</h1>
+    <table class="table" name="platformsTable" id="platformsTable" style="width:100%">
       <thead>
         <tr>
           <th> Console <i class="fa fa-fw fa-sort"></i></th>
@@ -159,10 +159,10 @@ src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap4.min.js"></scrip
     </div>
     <script>
 $(document).ready(function(){
-    $('#gamesTable').dataTable( {
+    $('#platformsTable').dataTable( {
     "lengthMenu": [ 3, 5, 10],
     "pageLength": 5
-} );
+  });
 });
 </script>
   </footer>
