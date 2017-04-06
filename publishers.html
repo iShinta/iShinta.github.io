@@ -7,6 +7,22 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/style.css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript"
+
+src="http://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript"
+
+src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript"
+
+src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap4.min.js"></script>
+
 </head>
 
 <body>
@@ -28,11 +44,11 @@
     <table style="width: 100%; margin: 0 auto;" class="table">
       <thead>
         <tr>
-          <th> Title </th>
-          <th> Headquarters </th>
-          <th> Founded </th>
-          <th> Revenue </th>
-          <th> Website </th>
+          <th> Title <i class="fa fa-fw fa-sort"></i></th>
+          <th> Headquarters <i class="fa fa-fw fa-sort"></i></th>
+          <th> Founded <i class="fa fa-fw fa-sort"></i></th>
+          <th> Revenue <i class="fa fa-fw fa-sort"></i></th>
+          <th> Website <i class="fa fa-fw fa-sort"></i></th>
         </tr>
       </thead>
       <tbody>
@@ -124,6 +140,12 @@
     </table>
   </div>
   <footer class="footer">
+	$(document).ready(function(){
+    $('#gamesTable').dataTable( {
+    "lengthMenu": [ 3, 5, 10],
+    "pageLength": 5
+} );
+});
     <div class="container">
       <p>CS329E : Project 3 - Group X</p>
     </div>
