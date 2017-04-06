@@ -320,6 +320,7 @@ div.dataTables_paginate{text-align:center}
 .pagination > li > a:active,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
+.pagination > li > span:active,
 .pagination > li > span:hover {
     z-index: 3;
     color: white;
@@ -344,3 +345,12 @@ a.paginate_active {
 .paging_full_numbers a:active {
     background-color: #F05F40
 }
+
+a.paginate_button.current {
+    background-color: #F05F40
+}
+
+.paging_full_numbers span.paginate_active
+      {
+            background-color: #F05F40;
+      }
