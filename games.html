@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/style.css" />
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<link rel="stylesheet" 
 
-href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+   
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 <script type="text/javascript" 
 
-src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+src="http://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" 
 
 src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -175,11 +176,15 @@ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></scrip
     <div class="container">
       <p>CS329E : Project 3 - Group X</p>
     </div>
-  </footer>
-  <script>
+    <script>
 $(document).ready(function(){
-    $('#gamesTable').dataTable();
+    $('#gamesTable').dataTable( {
+    "lengthMenu": [ 3, 5, 10, "All"],
+    "pageLength": 5
+} );
 });
 </script>
+  </footer>
+  
 </body>
 </html>
