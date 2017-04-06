@@ -316,7 +316,8 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination{margin:2px 0;white-
 div.dataTables_wrapper div.dataTables_paginate{margin:0;white-space:nowrap;text-align:right}
 div.dataTables_paginate{text-align:center}
 
-.pagination > li > a:focus,
+
+.pagination > li > a:active,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
 .pagination > li > span:hover {
@@ -324,4 +325,14 @@ div.dataTables_paginate{text-align:center}
     color: white;
     background-color: #F05F40;
     
+}
+
+.dataTables_filter {
+   width: 50%;
+   float: right;
+   text-align: right;
+}
+
+.paging_full_numbers a.paginate_active {
+    background-color: #F05F40 !important;
 }
