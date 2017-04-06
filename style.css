@@ -332,3 +332,7 @@ div.dataTables_paginate{text-align:center}
    float: right;
    text-align: right;
 }
+
+.paging_full_numbers a.paginate_active {
+    background-color: #F05F40 !important;
+}
