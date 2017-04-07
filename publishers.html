@@ -42,7 +42,7 @@ src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap4.min.js"></scrip
   <hr>
   <div id="body">
     <h1>Publishers</h1>
-    <table style="width: 100%; margin: 0 auto;" id="gamesTable" name="gamesTable" class="table">
+    <table style="width: 100%; margin: 0 auto;" id="publishersTable" name="publishersTable" class="table">
       <thead>
         <tr>
           <th> Title <i class="fa fa-fw fa-sort"></i></th>
@@ -62,9 +62,9 @@ src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap4.min.js"></scrip
         </tr>
         <tr>
           <td> <a href="publishers/atari.html">Atari</a></td>
-          <td> Kyoto, Japan </td>
-          <td> 1889 </td>
-          <td> ¥504.459 billion </td>
+          <td> New York City, New York, U.S. </td>
+          <td> 1972 </td>
+          <td> &euro;7.6 million </td>
           <td> <a href="http://atari.com">atari.com</a> </td>
         </tr>
         <tr>
@@ -147,7 +147,7 @@ src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap4.min.js"></scrip
     </div>
     <script>
 $(document).ready(function(){
-    $('#gamesTable').dataTable( {
+    $('#publishersTable').dataTable( {
     "lengthMenu": [ 3, 5, 10],
     "pageLength": 5
 } );
