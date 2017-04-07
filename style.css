@@ -355,6 +355,9 @@ a.paginate_button.current {
             background-color: #F05F40;
       }
 
-dl a {
+<<<<<<< HEAD
+
+.about-me-dl a {
+>>>>>>> 2d1d9d0d7f7e215035f73d8638487418c891565e
 	text-decoration: underline;
 }
