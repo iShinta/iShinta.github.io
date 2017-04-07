@@ -361,6 +361,6 @@ dl {
     text-align: center;
   }
 
-dl a {
+.about-me-dl a {
 	text-decoration: underline;
 }
