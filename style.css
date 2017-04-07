@@ -23,7 +23,7 @@ a {
 	-moz-transition: all .35s;
 	transition: all 0.35s;
 	color: #444;
-	text-decoration: underline;
+	text-decoration: none;
 }
 a:hover {
 	color: #F05F40;
@@ -360,3 +360,7 @@ dl {
    
     text-align: center;
   }
+
+dl a {
+	text-decoration: underline;
+}
